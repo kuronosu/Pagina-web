@@ -1,0 +1,149 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+.background img{
+  width: 300px;
+  border-radius: 100%;
+}
+.background{
+  height: 665px;
+  background: #414044;
+}
+.header-text{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+#menu{
+  position: fixed;
+  top:0px;
+  width:100vw;
+}
+.logotipo{
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.logotipo a{
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  padding: 5px 5px 5px 7px ;
+}
+.main-bar{
+  background: #292b2c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-menu{
+  font-size: 24px;
+  margin: 0;
+}
+.nav-menu a{
+  color: white;
+  text-decoration: none;
+  /*font-size: 2rem;*/
+}
+.nav-menu ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.nav-menu li{
+    margin-right: 30px;
+    list-style:none;
+}
+.lema, .lema a{
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin: 0px;
+  text-decoration: none;
+}
+.contenedor{
+  flex: 1;
+}
+#about{
+  padding-top: 70px;
+  padding-bottom: 40px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+.line::before, .line::after{
+  content: '\2014\2014\2014';
+  letter-spacing: -2px;
+  color: #c7c7c7;
+}
+.contenedor .line h2, .line p, .line h3{
+    margin: 0px;
+}
+.par1 h4{
+  margin-top: 5px;
+}
+.platzi:link, .platzi:visited, .platzi:active{
+  color: #110c0c;
+  font-weight: 800;
+  text-decoration: none;
+}
+.platzi:hover{
+  color: #5d0707;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.perfil{
+  display: flex;
+}
+.img1{
+  width: 40rem;
+}
+.bloque2{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  padding-bottom: 70px;
+  margin-right: 15px;
+  margin-left: 15px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+#estudios, #skills{
+  padding-top: 70px;
+  width: 40rem;
+}
+#estudios li, #skills li{
+  display: flex;
+  align-items: center;
+  list-style:none;
+}
+#estudios li span, #skills li span{
+  margin-left: 15px;
+}
+
+.footer{
+  background: #292b2c;
+  padding: 10px 0 10px 0;
+  margin-top: 15px;
+  height: 100%;
+  color: white;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+.contacto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contacto h5{
+  margin-bottom: 10px;
+}
+/*Copyright (c) 2017 Copyright Holder All Rights Reserved.*/
