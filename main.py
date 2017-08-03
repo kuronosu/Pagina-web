@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from platzi_Scraping import scraping
 
 app = Flask(__name__)
 PORT = 5000
@@ -10,7 +11,7 @@ def not_found(error):
 
 @app.route(r'/', methods =['GET'])
 def index():
-    return render_template('page.html')
+    return render_template('page.html', scraping = scraping() )
 
 if __name__ == '__main__':
     app.run(port = PORT, debug = DEBUG)

@@ -20,8 +20,8 @@
         <ul>
           <li><a href="#header">Inicio</a></li>
           <li><a href="#about">Perfil</a></li>
-          <li><a href="#estudios">Estudios y Skills</a></li>
-          <!-- <li><a href="#skills">Skills</a></li> -->
+          <li><a href="#estudios">Estudios <!-- y Skills--></a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#contacto">Contacto</a></li>
           <!-- <li><img src="./src/img/avatar.svg" height="42" class=" " alt="menu de perfil"></li> -->
         </ul>
@@ -31,9 +31,10 @@
     <header class="background header-text" id='header'>
       <!-- texto de la portada -->
       <img src="{{ url_for('static', filename = 'img/perfil.jpg')}}" alt="Foto de Felipe Martínez">
+      <p class="lema">Felipe Martínez</p>
       <h2 class="lema">Diseño y desarrollo web</h2>
       <p class="lema">Enfocado en Back-End</p>
-      <p  class="lema"><a href="https://twitter.com/KR0N0S31" target="_blank" >@KR0N0S31</a></p>
+      {# <p  class="lema"><a href="https://twitter.com/KR0N0S31" target="_blank" >@KR0N0S31</a></p>#}
     </header>
 
     <section class="contenedor">
@@ -66,9 +67,9 @@
           <p>Actualmente soy estudiante de <a class="platzi" target="_blank" href="https://platzi.com/@KR0N0S31">platzi</a> y próximamente empezare a estudiar Ingeniería de sistemas.</p>
           <h4>Cursos aprobados hasta el momento en <a class="platzi" target="_blank" href="https://platzi.com/@KR0N0S31">platzi</a> son:</h4>
           <ul>
-            <li><img src="https://static.platzi.com/media/achievements/programacion-basica2x.png" width="40" alt="Curso Gratis de Programación Básica"><span>Curso Gratis de Programación Básica</span></li>
-            <li><img src="https://static.platzi.com/media/achievements/badge-html-y-css-para-mails.png" width="40" alt="Curso de Desarrollo Web Online"><span>Curso de Desarrollo Web Online</span></li>
-            <li><img src="https://static.platzi.com/media/achievements/phyton-django2x.png" width="40" alt="Curso de Python"><span>Curso de Python</span></li>
+            {% for i in scraping %}
+              <li><img src="{{ i['src'] }}" width="40" alt="{{ i['alt'] }}"><span>{{ i['alt'] }}</span></li>
+            {% endfor %}
           </ul>
           <h4>Cursos que estoy cursando actualmente:</h4>
           <ul>
