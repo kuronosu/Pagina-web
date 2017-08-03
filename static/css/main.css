@@ -11,15 +11,15 @@ body {
   background: #414044;
 }
 .header-text{
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #menu{
   position: fixed;
   top:0px;
-  width:100vw;
+  width:100%;
 }
 .logotipo{
   margin: 0;
@@ -88,6 +88,9 @@ flex-direction: column;
 .par1 h4{
   margin-top: 5px;
 }
+.par1 p{
+  text-align:justify;
+}
 .platzi:link, .platzi:visited, .platzi:active{
   color: #110c0c;
   font-weight: 800;
@@ -108,7 +111,7 @@ flex-direction: column;
 .bloque2{
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content:space-around;
   padding-bottom: 70px;
   margin-right: 15px;
   margin-left: 15px;
@@ -117,7 +120,7 @@ flex-direction: column;
 }
 #estudios, #skills{
   padding-top: 70px;
-  width: 40rem;
+  width: 40%;
 }
 #estudios li, #skills li{
   display: flex;
@@ -127,7 +130,6 @@ flex-direction: column;
 #estudios li span, #skills li span{
   margin-left: 15px;
 }
-
 .footer{
   background: #292b2c;
   padding: 10px 0 10px 0;
@@ -145,5 +147,61 @@ flex-direction: column;
 }
 .contacto h5{
   margin-bottom: 10px;
+  text-align: center;
 }
-/*Copyright (c) 2017 Copyright Holder All Rights Reserved.*/
+.bloque2 #estudios p, .bloque2 #skills p{
+  text-align: justify;
+}
+
+@media (max-width: 1024px) {
+  body{
+    font-weight: 400;
+  }
+  .sobreMiFigure{
+    display: none;
+  }
+  #estudios, #skills{
+    padding-top: 70px;
+    width: 90%;
+  }
+  .bloque2{
+    display: flex;
+    flex-direction: column;
+    /*justify-content:space-between;*/
+    padding-bottom: 70px;
+    margin-right: 15px;
+    margin-left: 15px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+  }
+   #estudios .line::after{
+     display: none;
+  }
+  #estudios .line::before{
+    content: '\2014\2014\2014';
+    letter-spacing: -2px;
+    color: #c7c7c7;
+  }
+  .aling{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 800px) {
+  .aling{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-around;*/
+  }
+  .nav-menu{
+    font-size: 15px;
+  }
+  .nav-menu li{
+      margin-right: 12px;
+  }
+  .logotipo a{
+    font-size: 18px;
+  }
+}

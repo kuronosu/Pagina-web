@@ -43,7 +43,7 @@
           <h2>Sobre mí</h2>
         </div>
         <div class="perfil">
-          <figure>
+          <figure class="sobreMiFigure">
             <img class="img1" src="{{ url_for('static', filename = 'img/lenguajes-de-programacion.jpg')}}" alt="lenguajes-de-programacion">
           </figure>
           <div class="par1">
@@ -64,20 +64,26 @@
             <h2>Estudios</h2>
           </div>
           <p>Actualmente soy estudiante de <a class="platzi" target="_blank" href="https://platzi.com/@KR0N0S31">platzi</a> y próximamente empezare a estudiar Ingeniería de sistemas.</p>
-          <h4>Cursos aprobados hasta el momento en <a class="platzi" target="_blank" href="https://platzi.com/@KR0N0S31">platzi</a> son:</h4>
-          <ul>
-            <!-- {#{% for i in scraping %}
-              <li><img src="{{ i['src'] }}" width="40" alt="{{ i['alt'] }}"><span>{{ i['alt'] }}</span></li>
-            {% endfor %}#} -->
-            <li><img src="https://static.platzi.com/media/achievements/programacion-basica2x.png" width="40" alt="Curso Gratis de Programación Básica"><span>Curso Gratis de Programación Básica</span></li>
-            <li><img src="https://static.platzi.com/media/achievements/badge-html-y-css-para-mails.png" width="40" alt="Curso de Desarrollo Web Online"><span>Curso de Desarrollo Web Online</span></li>
-            <li><img src="https://static.platzi.com/media/achievements/phyton-django2x.png" width="40" alt="Curso de Python"><span>Curso de Python</span></li>
-          </ul>
-          <h4>Cursos que estoy cursando actualmente:</h4>
-          <ul>
-            <li><img src="https://static.platzi.com/media/achievements/git-github2x.png" width="40" alt="Curso profesional de Git y GitHub"><span>Curso profesional de Git y GitHub</span></li>
-            <li><img src="https://static.platzi.com/media/achievements/Badge-django.png" width="40" alt="Curso de Python y Django"><span>Curso de Python y Django</span></li>
-          </ul>
+          <div class="aling">
+            <div class="">
+              <h4>Cursos aprobados hasta el momento en <a class="platzi" target="_blank" href="https://platzi.com/@KR0N0S31">platzi</a> son:</h4>
+              <ul>
+                {# {% for i in cursos %}
+                <li><img src="{{ i['src'] }}" width="40" alt="{{ i['alt'] }}"><span>{{ i['alt'] }}</span></li>
+                {% endfor %}#}
+                <li><img src="https://static.platzi.com/media/achievements/programacion-basica2x.png" width="40" alt="Curso Gratis de Programación Básica"><span>Curso Gratis de Programación Básica</span></li>
+                <li><img src="https://static.platzi.com/media/achievements/badge-html-y-css-para-mails.png" width="40" alt="Curso de Desarrollo Web Online"><span>Curso de Desarrollo Web Online</span></li>
+                <li><img src="https://static.platzi.com/media/achievements/phyton-django2x.png" width="40" alt="Curso de Python"><span>Curso de Python</span></li>
+              </ul>
+            </div>
+            <div class="">
+              <h4>Cursos que estoy cursando actualmente:</h4>
+              <ul>
+                <li><img src="https://static.platzi.com/media/achievements/git-github2x.png" width="40" alt="Curso profesional de Git y GitHub"><span>Curso profesional de Git y GitHub</span></li>
+                <li><img src="https://static.platzi.com/media/achievements/Badge-django.png" width="40" alt="Curso de Python y Django"><span>Curso de Python y Django</span></li>
+              </ul>
+            </div>
+          </div>
         </div>
         <!-- skills -->
         <div id="skills">
@@ -85,19 +91,25 @@
             <h2>Skills</h2>
           </div>
           <p>Las habilidades y tecnologías que he aprendido son:</p>
-          <h4>Front-end:</h4>
-          <ul>
-            <li><img src="{{ url_for('static', filename = 'img/html5-logo.png')}}" width="40" alt="html5 logo"><span>HTML 5</span></li>
-            <li><img src="{{ url_for('static', filename = 'img/css3-logo.png')}}" width="40" alt="css3 logo"><span>CSS 3</span></li>
-          </ul>
-          <h4>Back-end:</h4>
-          <ul>
-            <li><img src="{{ url_for('static', filename = 'img/python-logo.png')}}" width="40" alt="python logo"><span>Python 3</span></li>
-            <li><img src="{{ url_for('static', filename = 'img/php-logo.png')}}" width="40" alt="php logo"><span>php</span></li>
-            <li><img src="{{ url_for('static', filename = 'img/mysql-logo.png')}}" height="40" alt="mysql logo"><span>MySQL</span></li>
-            <li><img src="{{ url_for('static', filename = 'img/flask-logo.png')}}" width="40" alt="Flask logo"><span>Python con Flask</span></li>
-            <li><img src="{{ url_for('static', filename = 'img/django-logo.png')}}" width="40" alt="django logo"><span>Python con django</span></li>
-          </ul>
+          <div class="aling">
+            <div class="back-end">
+              <h4>Back-end:</h4>
+              <ul>
+                <li><img src="{{ url_for('static', filename = 'img/python-logo.png')}}" width="40" alt="python logo"><span>Python 3</span></li>
+                <li><img src="{{ url_for('static', filename = 'img/php-logo.png')}}" width="40" alt="php logo"><span>php</span></li>
+                <li><img src="{{ url_for('static', filename = 'img/mysql-logo.png')}}" height="40" alt="mysql logo"><span>MySQL</span></li>
+                <li><img src="{{ url_for('static', filename = 'img/flask-logo.png')}}" width="40" alt="Flask logo"><span>Python con Flask</span></li>
+                <li><img src="{{ url_for('static', filename = 'img/django-logo.png')}}" width="40" alt="django logo"><span>Python con django</span></li>
+              </ul>
+            </div>
+            <div class="front-end">
+              <h4>Front-end:</h4>
+              <ul>
+                <li><img src="{{ url_for('static', filename = 'img/html5-logo.png')}}" width="40" alt="html5 logo"><span>HTML 5</span></li>
+                <li><img src="{{ url_for('static', filename = 'img/css3-logo.png')}}" width="40" alt="css3 logo"><span>CSS 3</span></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
