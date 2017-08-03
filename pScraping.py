@@ -17,6 +17,6 @@ def scraping():
     return cursos
 
 # if __name__ == '__main__':
-#     cursos = scraping()
+#     cursos = main()
 #     for i in cursos:
 #         print(i)
