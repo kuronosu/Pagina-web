@@ -191,8 +191,8 @@ body {
 
 @media (max-width: 800px) {
   .aling{
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
     /*justify-content: space-around;*/
   }
   .nav-menu{
