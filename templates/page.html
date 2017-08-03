@@ -67,7 +67,7 @@
           <p>Actualmente soy estudiante de <a class="platzi" target="_blank" href="https://platzi.com/@KR0N0S31">platzi</a> y próximamente empezare a estudiar Ingeniería de sistemas.</p>
           <h4>Cursos aprobados hasta el momento en <a class="platzi" target="_blank" href="https://platzi.com/@KR0N0S31">platzi</a> son:</h4>
           <ul>
-            {% for i in scraping %}
+            {% for i in cursos %}
               <li><img src="{{ i['src'] }}" width="40" alt="{{ i['alt'] }}"><span>{{ i['alt'] }}</span></li>
             {% endfor %}
           </ul>

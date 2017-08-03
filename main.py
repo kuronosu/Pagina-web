@@ -11,7 +11,7 @@ def not_found(error):
 
 @app.route(r'/', methods =['GET'])
 def index():
-    return render_template('page.html', scraping = scraping() )
+    return render_template('page.html', cursos = scraping() )
 
 if __name__ == '__main__':
     app.run(port = PORT, debug = DEBUG)
