@@ -57,7 +57,7 @@ body {
     margin-right: 30px;
     list-style:none;
 }
-.lema, .lema a{
+.lema{
   color: white;
   font-size: 1.7rem;
   font-weight: 300;
@@ -184,16 +184,37 @@ body {
   }
   .aling{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+  }
+  .nav-menu{
+    font-size: 27px;
+  }
+  .lema{
+    font-size: 1.9rem;
+  }
+  .footer{
+    font-size: 1.4rem;
+  }
+  #about{
+    font-size: 1.5rem;
+  }
+  .bloque2{
+    font-size: 1.5rem;
+  }
+  .logotipo a{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    padding: 2px;
   }
 }
 
 @media (max-width: 800px) {
   .aling{
     /*display: flex;
-    flex-direction: column;*/
-    /*justify-content: space-around;*/
+    flex-direction: column;
+    justify-content: space-around;
   }
   .nav-menu{
     font-size: 15px;
