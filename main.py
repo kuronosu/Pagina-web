@@ -7,7 +7,7 @@ DEBUG = False
 
 @app.errorhandler(404)
 def not_found(error):
-    return render_template('page.html')
+    return render_template('404.html')
 
 @app.route(r'/', methods =['GET'])
 def index():

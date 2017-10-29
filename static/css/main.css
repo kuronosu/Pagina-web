@@ -134,7 +134,6 @@ body {
   background: #292b2c;
   padding: 10px 0 10px 0;
   margin-top: 15px;
-  height: 100%;
   color: white;
   font-weight: 300;
   font-size: 1.3rem;
@@ -152,7 +151,60 @@ body {
 .bloque2 #estudios p, .bloque2 #skills p{
   text-align: justify;
 }
-
+.container404{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+a{
+  text-decoration: none;
+  color: #233b9a;
+}
+#fof{
+  display:block;
+  width:100%;
+  margin:100px 0;
+  line-height:1.6em;
+  text-align:center;
+}
+#fof .hgroup{
+  text-transform:uppercase;
+}
+#fof .hgroup h1{
+  margin-bottom:25px; font-size:80px;
+}
+#fof .hgroup h1 span{
+  display:inline-block;
+  margin-left:5px;
+  padding:2px;
+  border:1px solid #CCCCCC;
+  overflow:hidden;
+}
+#fof .hgroup h1 span strong{
+  display:inline-block;
+  padding:20px 20px;
+  border:1px solid #CCCCCC;
+  font-weight:normal;
+}
+#fof .hgroup h2{
+  font-size:60px;
+}
+#fof .hgroup h2 span{
+  padding: 15px;
+  display:block;
+  font-size:30px;
+}
+#fof p{
+  margin:25px 0 0 0;
+  padding:0;
+  border: 5px;
+  font-size:16px;
+}
+#fof p:first-child{
+  margin-top:0;
+}
 @media (max-width: 1024px) {
   body{
     font-weight: 400;
@@ -217,8 +269,8 @@ body {
 }
 
 @media (max-width: 800px) {
-  .aling{
-    /*display: flex;
+  /*.aling{
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
@@ -230,5 +282,5 @@ body {
   }
   .logotipo a{
     font-size: 18px;
-  }
+  }*/
 }
